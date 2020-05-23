@@ -1,0 +1,15 @@
+@use "constants/colors";
+@use 'constants/functions';
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #8af;
+
+body {
+    font: 100% $font-stack;
+    background: $primary-color;
+    color: colors.$white;
+}
+p { 
+    background: colors.$black;
+    @include functions.transform(rotate(1deg));
+}
