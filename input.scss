@@ -13,3 +13,25 @@ p {
     background: colors.$black;
     @include functions.transform(rotate(1deg));
 }
+
+%message-class {
+    border: 2px solid colors.$black;
+    padding: 10px;
+    color: colors.$black;
+}
+
+.message {
+    @extend %message-class;
+}
+.alert {
+    @extend %message-class;
+    background: colors.$yellow;
+}
+.error{
+    @extend %message-class;
+    background: lightcoral;
+}
+.success {
+    @extend %message-class;
+    background: colors.$green;
+}

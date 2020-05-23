@@ -11,4 +11,22 @@ p {
   transform: rotate(1deg);
 }
 
+.success, .error, .alert, .message {
+  border: 2px solid black;
+  padding: 10px;
+  color: black;
+}
+
+.alert {
+  background: yellow;
+}
+
+.error {
+  background: lightcoral;
+}
+
+.success {
+  background: green;
+}
+
 /*# sourceMappingURL=output.css.map */
